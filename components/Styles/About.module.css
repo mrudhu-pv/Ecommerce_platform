@@ -1,0 +1,136 @@
+/* Global Body Styles */
+body {
+  padding: 20px;
+  background-color: lightblue;
+  font-family: Arial, sans-serif; /* Default font for body */
+  margin: 0;
+  color: #333; /* Darker text for readability */
+}
+
+/* Container for Product Cards */
+.productCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Heading Styles */
+.heading {
+  text-align: center;
+  font-size: 28px; /* Slightly larger for emphasis */
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333; /* Dark text for heading */
+}
+
+/* Grid Layout for Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card Styles */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px; /* Increased padding for better spacing */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease; /* Added transition for shadow */
+  text-align: center;
+  overflow: hidden; /* Ensures no overflow for card content */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced hover shadow */
+}
+
+/* Image Styles */
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Title Style in Cards */
+.title {
+  font-size: 45px; /* Increased font size for better readability */
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333; /* Darker text for title */
+}
+
+/* Category Styling */
+.category {
+  color: #6c757d; /* Gray color for category text */
+  font-size: 14px;
+}
+
+/* Price Styling */
+.price {
+  font-size: 18px; /* Larger font size for better visibility */
+  font-weight: bold;
+  color: #28a745; /* Green color for price */
+  margin-top: 10px; /* Spacing above price */
+}
+
+/* Link Styling in Details Section */
+.detail a {
+  display: block;
+  color: #007bff; /* Blue color for links */
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 10px; /* Increased spacing above link */
+}
+
+.detail a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styling */
+.button {
+  background-color: #28a745; /* Green color for the button */
+  font-family: 'Serif', sans-serif;
+  border-radius: 10px;
+  padding: 10px 20px; /* Added padding for better button size */
+  border: none;
+  font-weight: bold;
+  color: white; /* Ensures the button text is white */
+  transition: background-color 0.3s ease; /* Smooth transition for button hover */
+  cursor: pointer; /* Indicating button interactivity */
+  text-align: center;
+  margin-top: 10px; /* Spacing above the button */
+}
+
+.button:hover {
+  background-color: #218838; /* Darker green on hover for visual feedback */
+}
+
+/* Mobile and Tablet Responsiveness */
+@media (max-width: 768px) {
+  .heading {
+      font-size: 22px; /* Smaller heading for mobile screens */
+  }
+
+  .card {
+      padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid for smaller screens */
+  }
+}
+/* General Text Styling */
+.text {
+  font-size: 16px; /* Default font size */
+  color: #333; /* Dark gray for readability */
+  line-height: 1.5; /* Improves text readability */
+  font-family: Arial, sans-serif; /* Consistent font family */
+  margin-bottom: 10px; /* Spacing between paragraphs */
+}

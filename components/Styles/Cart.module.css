@@ -1,0 +1,104 @@
+/* Cart.module.css */
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 20px;
+}
+
+.cartContainer {
+  background: white;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 26px;
+  font-weight: bold;
+  color:blue;
+  margin-bottom: 20px;
+}
+
+.cartList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.itemImage {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.itemDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.itemDetails h3 {
+  font-size: 18px;
+  margin: 0;
+  color:darkcyan;
+}
+
+.itemDetails p {
+  font-size: 16px;
+  font-weight: bold;
+  color:purple;
+  margin: 5px 0;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background-color:red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.totalContainer {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  margin-top: 20px;
+}
+
+.emptyMessage {
+  font-size: 18px;
+  color: #777;
+  margin-top: 20px;
+}
+.totalContainer{
+  color: darkgreen;
+}
